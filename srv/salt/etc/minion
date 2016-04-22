@@ -1,0 +1,9 @@
+master: localhost
+file_client: local
+file_roots:
+  base:
+    - /srv/salt/states/base
+fileserver_backend:
+  - roots
+rbenv:
+  build_env: 'CONFIGURE_OPTS="--no-tcmalloc" CFLAGS="-fno-tree-dce"'
